@@ -1,0 +1,24 @@
+.popup__profile-subtitle {
+    width: 358px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 510px) {
+    .popup__profile-subtitle {
+        width: 238px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .popup__profile-subtitle{
+        width: 242px;
+    }
+}

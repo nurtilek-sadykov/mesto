@@ -1,0 +1,8 @@
+.title-wrapper {
+    width: calc(100%*242/282);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 7px;
+}

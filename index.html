@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pages/index.css">
+        <title>Mesto</title>
+    </head>
+    <body class="body">
+        <div class="page">
+            <header class="header">
+                <img class="header__logo" src="images/mesto-logo.svg" alt="логотип-Место">
+            </header>
+            <section class="profile">
+                <div class="profile__wrapper">
+                    <img src="images/Avatar.png" alt="" class="profile__avatar">
+                    <div class="profile__info">
+                        <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        <img src="images/edit-button.svg" alt="" class="profile__edit-button">
+                        <p class="profile__subtitle">Исследователь океана</p>
+                    </div>
+                </div>
+                <div class="profile__add-button">
+                <img src="images/add-button-element.svg" alt="" class="profile__add-button-element">
+                </div>
+            </section>
+            <section class="elements">
+                <ul class="elements__list">
+                    <li class="element">
+                        <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
+                        <div class="title-wrapper">
+                            <h2 class="element__title">Карачаево-Черкессия</h2>
+                            <div class="element__like-button">
+                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
+                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
+                        <div class="title-wrapper">
+                            <h2 class="element__title">Гора Эльбрус</h2>
+                            <div class="element__like-button">
+                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
+                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img src="images/dombai.png" alt="Домбай" class="element__photo">
+                        <div class="title-wrapper">
+                            <h2 class="element__title">Домбай</h2>
+                            <div class="element__like-button">
+                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
+                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
+                        <div class="title-wrapper">
+                            <h2 class="element__title">Гора Эльбрус</h2>
+                            <div class="element__like-button">
+                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
+                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img src="images/dombai.png" alt="Домбай" class="element__photo">
+                        <div class="title-wrapper">
+                            <h2 class="element__title">Домбай</h2>
+                            <div class="element__like-button">
+                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
+                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
+                        <div class="title-wrapper">
+                            <h2 class="element__title">Карачаево-Черкессия</h2>
+                            <div class="element__like-button">
+                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
+                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            </div>                    
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <footer class="footer">
+                <p class="copyright">&copy; 2020 Mesto Russia</p>
+            </footer>
+            <div class="popup">
+                <form class="popup__container">
+                    <img class="popup__close-button" src="images/close-icon.svg" alt="закрыть">
+                    <h2 class="popup__header">Редактировать профиль</h2>
+                    <input class="popup__profile-title" type="text" placeholder="Имя"></input>
+                    <input class="popup__profile-subtitle" type="text" placeholder="О себе"></input>
+                    <button type="button"  class="submit-button">
+                        <p class="submit-button__text">Сохранить</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

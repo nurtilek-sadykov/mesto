@@ -1,0 +1,32 @@
+.profile__info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 294px 42px;
+    grid-template-rows: 39px 34px;
+    row-gap: 15px;
+    column-gap: 18px;
+    align-self: center;
+    margin-left: 30px;
+    margin-top: 9px;
+}
+
+@media screen and (max-width: 320px) {
+    .profile__info {
+        width: 282px;
+        justify-content: center;
+        grid-template-columns: 189px 18px;
+        grid-template-rows: 26px 14px;
+        column-gap: 10px;
+        row-gap: 14px;
+        margin: 0;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 510px) {
+    .profile__info {
+        grid-template-columns: 220px 42px;
+        grid-template-rows: 26px 34px;
+        column-gap: 5px;
+    }
+}

@@ -1,0 +1,28 @@
+.elements {
+    width: calc(100%*880/1024);
+    max-width: 880px;
+    margin: auto;
+    margin-top: 51.25px;
+    margin-bottom: 69px;
+}
+
+@media screen and (min-width: 880px) and (max-width: 1024px) {
+    .elements {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .elements {
+        width: 584px;
+        grid-template-columns: repeat(2, 282px);
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .elements {
+        width: 282px;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+}
