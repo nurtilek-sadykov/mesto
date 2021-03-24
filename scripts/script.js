@@ -1,39 +1,46 @@
-let likeButtonInactive = document.querySelectorAll('.element__like-button_inactive');
+let nameInput = document.querySelector('.edit-profile__profile-title');
+let jobInput = document.querySelector('.edit-profile__profile-subtitle');
+let profileTitle = document.querySelector('.profile__title');
+let profileSubtitle = document.querySelector('.profile__subtitle');
+let popupCloseButton = document.querySelector('.popup__close-button');
+let editButton = document.querySelector('.profile__edit-button');
+let popup = document.querySelector('.popup');
+let formSubmitButton = document.querySelector('.edit-profile__submit-button');
+let profileEditForm = document.querySelector('.edit-profile');
 
-var likeButtonActive = document.querySelectorAll('.element__like-button_active');
-
-for (let i = 0; i < likeButtonInactive.length; i++ ){
+/*for (let i = 0; i < likeButtonInactive.length; i++ ){
     likeButtonInactive[i].addEventListener('click', function () {
     likeButtonActive[i].classList.add('like-button_visible');
     });
-};
+};*/
+editButton.addEventListener('click', popupOpen);
 
-let editButton = document.querySelector('.profile__edit-button');
-let popup = document.querySelector('.popup');
+popupCloseButton.addEventListener('click', popupClose);
 
-editButton.addEventListener('click', function () {
-    popup.classList.add('popup_opened');
-  }); 
+profileEditForm.addEventListener('submit', formSubmitHandler);
 
-
-let profileTitle = document.querySelector('.profile__title');
-let profileSubtitle = document.querySelector('.profile__subtitle');
-let popupProfileTitle = document.querySelector('.popup__profile-title');
-let popupProfileSubtitle = document.querySelector('.popup__profile-subtitle');
-let submitButton = document.querySelector('.submit-button');
-let popupCloseButton = document.querySelector('.popup__close-button');
-
-
-submitButton.addEventListener('click', function() {
-    if (popupProfileTitle.value !== "") {
-        profileTitle.textContent = popupProfileTitle.value;
-    } else if (popupProfileSubtitle.value !== "") {
-        profileSubtitle.textContent = popupProfileSubtitle.value;
+    function formSubmitHandler(evt) {
+        evt.preventDefault();
+    if (nameInput.value !== "") {
+        profileTitle.textContent = nameInput.value;
     } else {
         popup.classList.remove('popup_opened');
-    }
-        popup.classList.remove('popup_opened');});
+    };
 
-popupCloseButton.addEventListener('click', function(){
+    if (jobInput.value !== "") {
+        profileSubtitle.textContent = jobInput.value;
+    } else {
+        popup.classList.remove('popup_opened');
+    };
+        popup.classList.remove('popup_opened');
+    };
+
+    function popupOpen() {
+        nameInput.value = profileTitle.textContent;
+        jobInput.value = profileSubtitle.textContent;
+        popup.classList.add('popup_opened');
+  }; 
+
+function popupClose(){
     popup.classList.remove('popup_opened');
-})
+};

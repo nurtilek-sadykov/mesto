@@ -1,25 +1,23 @@
-.popup__profile-title {
+.edit-profile__profile-subtitle {
     width: 358px;
-    height: 31px;
     font-size: 14px;
     line-height: 17px;
     font-style: normal;
     font-weight: 400;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 510px) {
-    .popup__profile-title {
+    .edit-profile__profile-subtitle {
         width: 238px;
-        margin-top: 75px;
     }
 }
 
 @media screen and (max-width: 510px){
-    .popup__profile-title {
+    .edit-profile__profile-subtitle{
         width: 242px;
     }
 }

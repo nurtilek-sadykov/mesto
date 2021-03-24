@@ -14,7 +14,6 @@
         width: calc(100%*282/320);
         max-width: 320px;
         flex-direction: column;
-        margin-bottom: 36px;
         margin-top: 42.25px;
     }
 }

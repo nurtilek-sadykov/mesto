@@ -7,102 +7,102 @@
         <title>Mesto</title>
     </head>
     <body class="body">
+        <header class="header">
+            <img class="header__logo" src="images/mesto-logo.svg" alt="логотип-Место">
+        </header>
         <div class="page">
-            <header class="header">
-                <img class="header__logo" src="images/mesto-logo.svg" alt="логотип-Место">
-            </header>
             <section class="profile">
                 <div class="profile__wrapper">
                     <img src="images/avatar.png" alt="Жак-Ив Кусто" class="profile__avatar">
                     <div class="profile__info">
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
-                        <img src="images/edit-button.svg" alt="редактировать" class="profile__edit-button">
+                        <button class="profile__edit-button"><img src="images/edit-button.svg" alt="редактировать" class="profile__edit-button"></button>
                         <p class="profile__subtitle">Исследователь океана</p>
                     </div>
                 </div>
-                <div class="profile__add-button">
+                <button class="profile__add-button">
                 <img src="images/add-button-element.svg" alt="добавить" class="profile__add-button-element">
-                </div>
+                </button>
             </section>
             <section class="elements">
                 <ul class="elements__list">
                     <li class="element">
                         <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
-                        <div class="title-wrapper">
+                        <div class="element__title-wrapper">
                             <h2 class="element__title">Карачаево-Черкессия</h2>
-                            <div class="element__like-button">
+                            <button class="element__like-button">
                                 <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
                                 <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
-                            </div>
+                            </button>
                         </div>
                     </li>
                     <li class="element">
                         <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
-                        <div class="title-wrapper">
+                        <div class="element__title-wrapper">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <div class="element__like-button">
+                            <button class="element__like-button">
                                 <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
                                 <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
-                            </div>                    
+                            </button>                    
                         </div>
                     </li>
                     <li class="element">
                         <img src="images/dombai.png" alt="Домбай" class="element__photo">
-                        <div class="title-wrapper">
+                        <div class="element__title-wrapper">
                             <h2 class="element__title">Домбай</h2>
-                            <div class="element__like-button">
+                            <button class="element__like-button">
                                 <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
                                 <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
-                            </div>                    
+                            </button>                    
                         </div>
                     </li>
                     <li class="element">
                         <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
-                        <div class="title-wrapper">
+                        <div class="element__title-wrapper">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <div class="element__like-button">
+                            <button class="element__like-button">
                                 <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
                                 <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
-                            </div>                    
+                            </button>                    
                         </div>
                     </li>
                     <li class="element">
                         <img src="images/dombai.png" alt="Домбай" class="element__photo">
-                        <div class="title-wrapper">
+                        <div class="element__title-wrapper">
                             <h2 class="element__title">Домбай</h2>
-                            <div class="element__like-button">
+                            <button class="element__like-button">
                                 <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
                                 <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
-                            </div>                    
+                            </button>                    
                         </div>
                     </li>
                     <li class="element">
                         <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
-                        <div class="title-wrapper">
+                        <div class="element__title-wrapper">
                             <h2 class="element__title">Карачаево-Черкессия</h2>
-                            <div class="element__like-button">
+                            <button class="element__like-button">
                                 <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
                                 <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
-                            </div>                    
+                            </button>                    
                         </div>
                     </li>
                 </ul>
             </section>
-            <footer class="footer">
-                <p class="copyright">&copy; 2020 Mesto Russia</p>
-            </footer>
-            <div class="popup">
-                <form class="popup__container">
-                    <img class="popup__close-button" src="images/close-icon.svg" alt="закрыть">
-                    <h2 class="popup__header">Редактировать профиль</h2>
-                    <input class="popup__profile-title" type="text" placeholder="Имя">
-                    <input class="popup__profile-subtitle" type="text" placeholder="О себе">
-                    <div class="submit-button">
-                        <p class="submit-button__text">Сохранить</p>
-                    </div>
+        </div>
+        <footer class="footer">
+                <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+        </footer>
+        <div class="popup">
+            <div class="popup__container">
+                <button class="popup__close-button"></button>
+                <form class="edit-profile">
+                    <h2 class="edit-profile__header">Редактировать профиль</h2>
+                    <input class="edit-profile__profile-title" name="profile-name" type="text" placeholder="Имя">
+                    <input class="edit-profile__profile-subtitle" name="profile-job" type="text" placeholder="О себе">
+                    <button class="edit-profile__submit-button" type="submit">Сохранить</button>
                 </form>
             </div>
         </div>
-        <script src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
     </body>
 </html>

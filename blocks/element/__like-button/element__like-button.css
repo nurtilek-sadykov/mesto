@@ -4,4 +4,7 @@
     align-self: center;
     background: #FFFFFF;
     position: relative;
+    display: flex;
+    justify-content: center;
+    border-color: #FFFFFF;
 }

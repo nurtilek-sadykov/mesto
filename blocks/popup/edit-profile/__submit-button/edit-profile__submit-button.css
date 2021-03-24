@@ -1,4 +1,4 @@
-.submit-button {
+.edit-profile__submit-button {
     width: 358px;
     height: 50px;
     margin: auto;
@@ -9,10 +9,13 @@
     align-items: center;
     background: #000000;
     border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 @media screen and (max-width: 510px) {
-    .submit-button {
+    .edit-profile__submit-button {
         width: 238px;
         height: 47px;
         margin-bottom: 25px;
@@ -20,13 +23,13 @@
     }
 }
 
-.submit-button:hover {
+.edit-profile__submit-button:hover {
     opacity: .8;
     cursor: pointer;
 }
 
 @media screen and (max-width: 510px){
-    .submit-button {
+    .edit-profile__submit-button {
         width: 242px;
     }
 }

@@ -1,4 +1,4 @@
-.title-wrapper {
+.element__title-wrapper {
     width: calc(100%*242/282);
     display: flex;
     flex-direction: row;
