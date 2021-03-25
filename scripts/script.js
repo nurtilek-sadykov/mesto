@@ -1,5 +1,5 @@
-let nameInput = document.querySelector('.edit-profile__profile-title');
-let jobInput = document.querySelector('.edit-profile__profile-subtitle');
+let nameInput = document.querySelector('#edit-profile__profile-title');
+let jobInput = document.querySelector('#edit-profile__profile-subtitle');
 let profileTitle = document.querySelector('.profile__title');
 let profileSubtitle = document.querySelector('.profile__subtitle');
 let popupCloseButton = document.querySelector('.popup__close-button');

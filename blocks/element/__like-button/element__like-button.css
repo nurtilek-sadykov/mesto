@@ -1,10 +1,8 @@
 .element__like-button {
-    width: 22px;
-    height: 19px;
-    align-self: center;
-    background: #FFFFFF;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    border-color: #FFFFFF;
+    background: #fff;
+    border: none;
+}
+
+.element__like-button:hover {
+    opacity: .5;
 }

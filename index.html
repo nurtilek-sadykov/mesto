@@ -16,11 +16,11 @@
                     <img src="images/avatar.png" alt="Жак-Ив Кусто" class="profile__avatar">
                     <div class="profile__info">
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
-                        <button class="profile__edit-button"><img src="images/edit-button.svg" alt="редактировать" class="profile__edit-button"></button>
+                        <button class="profile__edit-button" type="button"><img src="images/edit-button.svg" alt="редактировать" class="profile__edit-button"></button>
                         <p class="profile__subtitle">Исследователь океана</p>
                     </div>
                 </div>
-                <button class="profile__add-button">
+                <button class="profile__add-button" type="submit">
                 <img src="images/add-button-element.svg" alt="добавить" class="profile__add-button-element">
                 </button>
             </section>
@@ -30,9 +30,8 @@
                         <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Карачаево-Черкессия</h2>
-                            <button class="element__like-button">
-                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
-                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            <button class="element__like-button" type="button">
+                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
                             </button>
                         </div>
                     </li>
@@ -40,9 +39,8 @@
                         <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__like-button">
-                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
-                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            <button class="element__like-button" type="button">
+                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -50,9 +48,8 @@
                         <img src="images/dombai.png" alt="Домбай" class="element__photo">
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Домбай</h2>
-                            <button class="element__like-button">
-                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
-                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            <button class="element__like-button" type="button">
+                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -60,9 +57,8 @@
                         <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__like-button">
-                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
-                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            <button class="element__like-button" type="button">
+                               <img class="element__like-button" src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -70,9 +66,8 @@
                         <img src="images/dombai.png" alt="Домбай" class="element__photo">
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Домбай</h2>
-                            <button class="element__like-button">
-                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
-                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            <button class="element__like-button" type="button">
+                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -80,9 +75,8 @@
                         <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Карачаево-Черкессия</h2>
-                            <button class="element__like-button">
-                                <div class="element__like-button element__like-button_inactive"><img src="images/like-button.svg" alt="нравится"></div>
-                                <div class="element__like-button element__like-button_active"><img src="images/like-button_active.svg" alt="нравится"></div>
+                            <button class="element__like-button" type="button">
+                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -94,11 +88,11 @@
         </footer>
         <div class="popup">
             <div class="popup__container">
-                <button class="popup__close-button"></button>
+                <button class="popup__close-button" type="submit"></button>
                 <form class="edit-profile">
                     <h2 class="edit-profile__header">Редактировать профиль</h2>
-                    <input class="edit-profile__profile-title" name="profile-name" type="text" placeholder="Имя">
-                    <input class="edit-profile__profile-subtitle" name="profile-job" type="text" placeholder="О себе">
+                    <input class="edit-profile__input" id="edit-profile__profile-title" name="profile-name" type="text" placeholder="Имя">
+                    <input class="edit-profile__input" id="edit-profile__profile-subtitle" name="profile-job" type="text" placeholder="О себе">
                     <button class="edit-profile__submit-button" type="submit">Сохранить</button>
                 </form>
             </div>

@@ -12,6 +12,7 @@
     color: #FFFFFF;
     font-size: 18px;
     line-height: 22px;
+    border: none;
 }
 
 @media screen and (max-width: 510px) {
