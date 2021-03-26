@@ -26,6 +26,7 @@
 @import url("../blocks/popup/_opened/popup_opened.css");
 @import url("../blocks/popup/__container/popup__container.css");
 @import url("../blocks/popup/__close-button/popup__close-button.css");
+@import url("../blocks/popup/__close-button-element/popup__close-button-element.css");
 @import url("../blocks/edit-profile/__header/edit-profile__header.css");
 @import url("../blocks/edit-profile/__input/edit-profile__input.css");
 @import url("../blocks/edit-profile/__submit-button/edit-profile__submit-button.css");

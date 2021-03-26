@@ -15,7 +15,13 @@
     border: none;
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 320px) { 
+    .edit-profile__submit-button {
+        width: 238px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 510px) {
     .edit-profile__submit-button {
         width: 238px;
         height: 47px;

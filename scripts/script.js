@@ -13,34 +13,28 @@ let profileEditForm = document.querySelector('.edit-profile');
     likeButtonActive[i].classList.add('like-button_visible');
     });
 };*/
-editButton.addEventListener('click', popupOpen);
 
-popupCloseButton.addEventListener('click', popupClose);
 
-profileEditForm.addEventListener('submit', formSubmitHandler);
 
-    function formSubmitHandler(evt) {
+
+
+function formSubmitHandler(evt) {
         evt.preventDefault();
-    if (nameInput.value !== "") {
         profileTitle.textContent = nameInput.value;
-    } else {
-        popup.classList.remove('popup_opened');
-    };
-
-    if (jobInput.value !== "") {
         profileSubtitle.textContent = jobInput.value;
-    } else {
-        popup.classList.remove('popup_opened');
-    };
         popup.classList.remove('popup_opened');
     };
 
-    function popupOpen() {
+function popupOpen() {
         nameInput.value = profileTitle.textContent;
         jobInput.value = profileSubtitle.textContent;
         popup.classList.add('popup_opened');
   }; 
 
-function popupClose(){
+  function popupClose(){
     popup.classList.remove('popup_opened');
 };
+
+profileEditForm.addEventListener('submit', formSubmitHandler);
+editButton.addEventListener('click', popupOpen);
+popupCloseButton.addEventListener('click', popupClose);

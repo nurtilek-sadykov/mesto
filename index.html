@@ -10,17 +10,17 @@
         <header class="header">
             <img class="header__logo" src="images/mesto-logo.svg" alt="логотип-Место">
         </header>
-        <div class="page">
+        <main class="page">
             <section class="profile">
                 <div class="profile__wrapper">
                     <img src="images/avatar.png" alt="Жак-Ив Кусто" class="profile__avatar">
                     <div class="profile__info">
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
-                        <button class="profile__edit-button" type="button"><img src="images/edit-button.svg" alt="редактировать" class="profile__edit-button"></button>
+                        <button class="profile__edit-button" type="button"><img src="images/edit-button.svg" alt="редактировать"></button>
                         <p class="profile__subtitle">Исследователь океана</p>
                     </div>
                 </div>
-                <button class="profile__add-button" type="submit">
+                <button class="profile__add-button" type="button">
                 <img src="images/add-button-element.svg" alt="добавить" class="profile__add-button-element">
                 </button>
             </section>
@@ -31,7 +31,7 @@
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Карачаево-Черкессия</h2>
                             <button class="element__like-button" type="button">
-                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
+                                <img src="images/like-button.svg" alt="нравится">
                             </button>
                         </div>
                     </li>
@@ -40,7 +40,7 @@
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Гора Эльбрус</h2>
                             <button class="element__like-button" type="button">
-                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
+                                <img src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -49,7 +49,7 @@
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Домбай</h2>
                             <button class="element__like-button" type="button">
-                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
+                                <img src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -58,7 +58,7 @@
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Гора Эльбрус</h2>
                             <button class="element__like-button" type="button">
-                               <img class="element__like-button" src="images/like-button.svg" alt="нравится">
+                               <img src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -67,7 +67,7 @@
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Домбай</h2>
                             <button class="element__like-button" type="button">
-                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
+                                <img src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
@@ -76,20 +76,22 @@
                         <div class="element__title-wrapper">
                             <h2 class="element__title">Карачаево-Черкессия</h2>
                             <button class="element__like-button" type="button">
-                                <img class="element__like-button" src="images/like-button.svg" alt="нравится">
+                                <img src="images/like-button.svg" alt="нравится">
                             </button>                    
                         </div>
                     </li>
                 </ul>
             </section>
-        </div>
+        </main>
         <footer class="footer">
                 <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
         </footer>
         <div class="popup">
             <div class="popup__container">
-                <button class="popup__close-button" type="submit"></button>
-                <form class="edit-profile">
+                <button class="popup__close-button" type="submit">
+                    <img class="popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
+                </button>
+                <form class="edit-profile" name="edit-profile">
                     <h2 class="edit-profile__header">Редактировать профиль</h2>
                     <input class="edit-profile__input" id="edit-profile__profile-title" name="profile-name" type="text" placeholder="Имя">
                     <input class="edit-profile__input" id="edit-profile__profile-subtitle" name="profile-job" type="text" placeholder="О себе">
