@@ -32,3 +32,34 @@
 @import url("../blocks/edit-profile/__input/edit-profile__input.css");
 @import url("../blocks/edit-profile/__submit-button/edit-profile__submit-button.css");
 @import url("../blocks/edit-profile/edit-profile.css");
+
+.element__delete {
+    width: 18px;
+    height: 19.3px;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element__delete:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.element__like-button_active {
+    background:  url('../images/like-button_active.svg') center no-repeat;
+}
+
+.element-photo-popup {
+    width: 800px;
+    max-width: 75vw;
+    height: 1196px;
+    max-height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}

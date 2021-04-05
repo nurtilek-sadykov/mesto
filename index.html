@@ -26,60 +26,6 @@
             </section>
             <section class="elements">
                 <ul class="elements__list">
-                    <li class="element">
-                        <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
-                        <div class="element__title-wrapper">
-                            <h2 class="element__title">Карачаево-Черкессия</h2>
-                            <button class="element__like-button" type="button">
-                                <img src="images/like-button.svg" alt="нравится">
-                            </button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
-                        <div class="element__title-wrapper">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__like-button" type="button">
-                                <img src="images/like-button.svg" alt="нравится">
-                            </button>                    
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img src="images/dombai.png" alt="Домбай" class="element__photo">
-                        <div class="element__title-wrapper">
-                            <h2 class="element__title">Домбай</h2>
-                            <button class="element__like-button" type="button">
-                                <img src="images/like-button.svg" alt="нравится">
-                            </button>                    
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img src="images/elbrus.png" alt="Гора-Эльбрус" class="element__photo">
-                        <div class="element__title-wrapper">
-                            <h2 class="element__title">Гора Эльбрус</h2>
-                            <button class="element__like-button" type="button">
-                               <img src="images/like-button.svg" alt="нравится">
-                            </button>                    
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img src="images/dombai.png" alt="Домбай" class="element__photo">
-                        <div class="element__title-wrapper">
-                            <h2 class="element__title">Домбай</h2>
-                            <button class="element__like-button" type="button">
-                                <img src="images/like-button.svg" alt="нравится">
-                            </button>                    
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img src="images/karachaevsk.png" alt="Карачаевск" class="element__photo">
-                        <div class="element__title-wrapper">
-                            <h2 class="element__title">Карачаево-Черкессия</h2>
-                            <button class="element__like-button" type="button">
-                                <img src="images/like-button.svg" alt="нравится">
-                            </button>                    
-                        </div>
-                    </li>
                 </ul>
             </section>
         </main>
@@ -99,6 +45,29 @@
                 </form>
             </div>
         </div>
+        <div class="new-card popup">
+            <div class="new-card popup__container">
+                <button class="new-card popup__close-button">
+                    <img class="new-card popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
+                </button>
+                <form class="add-new-card edit-profile">
+                    <h2 class="add-new-card edit-profile__header">Новое место</h2>
+                    <input class="add-new-card__title edit-profile__input" id="add-new-card__title" name="card-title" type="text" placeholder="Название">
+                    <input class="add-new-card__link edit-profile__input" id="add-new-card__subtitle" name="card-link" type="text" placeholder="Ссылка на картинку">
+                    <button class="add-new-card edit-profile__submit-button" type="submit">Создать</button>
+                </form>
+            </div>
+        </div>
+    <template class="card-template">
+        <li class="element">
+            <button class="element__delete"><img src="images/Trash.svg" alt="удалить"></button>
+            <img src="" alt="" class="element__photo">
+            <div class="element__title-wrapper">
+                <h2 class="element__title"></h2>
+                <button class="element__like-button" type="button"></button>                    
+            </div>
+        </li>
+    </template>
     <script src="scripts/script.js"></script>
     </body>
 </html>
