@@ -1,4 +1,4 @@
-.edit-profile__input {
+.form__input {
     width: 358px;
     font-size: 14px;
     line-height: 17px;
@@ -12,13 +12,13 @@
 }
 
 @media screen and (max-width: 320px) {
-    .edit-profile__input {
+    .form__input {
         width: 238px;
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 510px){
-    .edit-profile__input {
+    .form__input {
         width: 242px;
     }
 }

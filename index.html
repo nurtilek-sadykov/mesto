@@ -32,38 +32,39 @@
         <footer class="footer">
                 <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
         </footer>
-        <div class="popup">
-            <div class="popup__container">
-                <button class="popup__close-button" type="button">
-                    <img class="popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
+        <div class="edit-profile popup">
+            <div class="edit-profile popup__container">
+                <button class="edit-profile popup__close-button" type="button">
+                    <img class="edit-profile popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
                 </button>
-                <form class="edit-profile" name="edit-profile">
-                    <h2 class="edit-profile__header">Редактировать профиль</h2>
-                    <input class="edit-profile__input" id="edit-profile__profile-title" name="profile-name" type="text" placeholder="Имя">
-                    <input class="edit-profile__input" id="edit-profile__profile-subtitle" name="profile-job" type="text" placeholder="О себе">
-                    <button class="edit-profile__submit-button" type="submit">Сохранить</button>
+                <form class="edit-profile form" name="edit-profile-form">
+                    <h2 class="edit-profile form__header">Редактировать профиль</h2>
+                    <input class="edit-profile form__input" id="edit-profile__profile-title" name="profile-name" type="text" placeholder="Имя">
+                    <input class="edit-profile form__input" id="edit-profile__profile-subtitle" name="profile-job" type="text" placeholder="О себе">
+                    <button class="edit-profile form__submit-button" type="submit">Сохранить</button>
                 </form>
             </div>
         </div>
-        <div class="new-card popup">
-            <div class="new-card popup__container">
-                <button class="new-card popup__close-button">
-                    <img class="new-card popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
+        <div class="add-new-card popup">
+            <div class="add-new-card popup__container">
+                <button class="add-new-card popup__close-button">
+                    <img class="add-new-card popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
                 </button>
-                <form class="add-new-card edit-profile">
-                    <h2 class="add-new-card edit-profile__header">Новое место</h2>
-                    <input class="add-new-card__title edit-profile__input" id="add-new-card__title" name="card-title" type="text" placeholder="Название">
-                    <input class="add-new-card__link edit-profile__input" id="add-new-card__subtitle" name="card-link" type="text" placeholder="Ссылка на картинку">
-                    <button class="add-new-card edit-profile__submit-button" type="submit">Создать</button>
+                <form class="add-new-card form" name="add-new-card-form">
+                    <h2 class="add-new-card form__header">Новое место</h2>
+                    <input class="add-new-card form__input" id="add-new-card-form__title" name="card-title" type="text" placeholder="Название">
+                    <input class="add-new-card form__input" id="add-new-card-form__link" name="card-link" type="text" placeholder="Ссылка на картинку">
+                    <button class="add-new-card form__submit-button" type="submit">Создать</button>
                 </form>
             </div>
         </div>
-        <div class="card-photo-popup popup">
-            <div class="card-photo-popup popup__container">
-                <button class="card-photo-popup popup__close-button" type="button">
-                    <img class="card-photo-popup popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
+        <div class="card-image popup">
+            <div class="card-image popup__container">
+                <button class="card-image popup__close-button" type="button">
+                    <img class="card-image popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
                 </button>
-
+                <img class="card-image__element" src="" alt="">
+                <div class="card-image__caption"></div>
             </div>
         </div>
     <template class="card-template">

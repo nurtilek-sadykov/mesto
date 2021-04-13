@@ -1,0 +1,10 @@
+.card-image__caption {
+    max-width: 291px;
+    font-size: 12px;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 10px;
+    background-color: transparent;
+}
