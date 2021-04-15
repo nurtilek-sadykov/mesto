@@ -24,10 +24,6 @@ const closePopupButton = document.querySelector('.popup__close-button');
 const cardImagePopupClose = document.querySelector('.card-image.popup__close-button');
 const cardTemplatesElement = cardTemplate.querySelector('.element');
 
-/*** */
-
-/*** */
-/*>>>*/
 
 function formSubmitHandler(evt) { 
   evt.preventDefault(); 
@@ -43,6 +39,7 @@ function cardFormSubmitHandler(evt) {
   link: newCardLinkInput.value
   }
   addCard(newObjectBuiltWithNewInputData, elementsList);
+  addNewCardForm.reset();
   closePopup(addNewCard);
 }
 
