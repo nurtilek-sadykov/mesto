@@ -42,7 +42,6 @@ function cardFormSubmitHandler(evt) {
   name: newCardNameInput.value,
   link: newCardLinkInput.value
   }
-  console.log(newObjectBuiltWithNewInputData);
   addCard(newObjectBuiltWithNewInputData, elementsList);
   closePopup(addNewCard);
 }
