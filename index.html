@@ -37,10 +37,12 @@
                 <button class="edit-profile popup__close-button" type="button">
                     <img class="edit-profile popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
                 </button>
-                <form class="edit-profile form" name="edit-profile-form">
+                <form class="edit-profile form" name="edit-profile-form" novalidate>
                     <h2 class="edit-profile form__header">Редактировать профиль</h2>
-                    <input class="edit-profile form__input" id="edit-profile__profile-title" name="profile-name" type="text" placeholder="Имя">
-                    <input class="edit-profile form__input" id="edit-profile__profile-subtitle" name="profile-job" type="text" placeholder="О себе">
+                    <input class="edit-profile form__input" id="edit-profile-title" name="profile-name" type="text" placeholder="Имя" required minlength="2" maxlength="40">
+                    <span class="form__input-error edit-profile-title-error"></span>
+                    <input class="edit-profile form__input" id="edit-profile-subtitle" name="profile-job" type="text" placeholder="О себе" required minlength="2" maxlength="40">
+                    <span class="form__input-error edit-profile-subtitle-error"></span>
                     <button class="edit-profile form__submit-button" type="submit">Сохранить</button>
                 </form>
             </div>
@@ -50,10 +52,12 @@
                 <button class="add-new-card popup__close-button">
                     <img class="add-new-card popup__close-button-element" src="images/close-icon.svg" alt="закрыть">
                 </button>
-                <form class="add-new-card form" name="add-new-card-form">
+                <form class="add-new-card form" name="add-new-card-form" novalidate>
                     <h2 class="add-new-card form__header">Новое место</h2>
-                    <input class="add-new-card form__input" id="add-new-card-form__title" name="card-title" type="text" placeholder="Название" autocomplete="off">
-                    <input class="add-new-card form__input" id="add-new-card-form__link" name="card-link" type="text" placeholder="Ссылка на картинку" autocomplete="off">
+                    <input class="add-new-card form__input" id="add-new-card-form-title" name="card-title" type="text" placeholder="Название" autocomplete="off" required minlength="2" maxlength="30">
+                    <span class="form__input-error add-new-card-form-title-error"></span> 
+                    <input class="add-new-card form__input" id="add-new-card-form-link" name="card-link" type="url" placeholder="Ссылка на картинку" autocomplete="off" required>
+                    <span class="form__input-error add-new-card-form-link-error"></span> 
                     <button class="add-new-card form__submit-button" type="submit">Создать</button>
                 </form>
             </div>
