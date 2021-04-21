@@ -175,27 +175,6 @@ const toggleButtonState = (inputList, buttonElement) => {
 
   setEventListeners(profileEditForm);
   setEventListeners(addNewCardForm);
-/*const enableValidation = () => {
-  const formList = Array.from(document.querySelectorAll('.form'));
-  formList.forEach((formElement) => {
-    formElement.addEventListener('submit', function (evt) {
-      evt.preventDefault();
-      setEventListeners(formElement);
-    });
-    
-    const fieldsetList = Array.from(formElement.querySelectorAll('.form__set'));
-    
-    fieldsetList.forEach((fieldSet) => {
-    setEventListeners(fieldSet);
-});
-  });
- 
-};*/
-
- 
-
-/*enableValidation();*/
- /** */
 
 /*закрыть попап через esc */
 
